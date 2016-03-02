@@ -1,0 +1,29 @@
+<package>
+  <description brief="pr2ForceTorqueReader">
+
+     pr2ForceTorqueReader
+
+  </description>
+  <author>Yuquan Wang</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/pr2ForceTorqueReader</url>
+
+  <export>
+    <cpp cflags="-I${prefix}/common/include" lflags="-Wl,-rpath,${prefix}/ros/lib -L${prefix}/ros/lib -lpr2ForceTorqueReader"/>
+  </export>
+
+  <depend package="pr2_hardware_interface"/>
+  <depend package="pr2_mechanism_model"/>
+  <depend package="realtime_tools"/>
+
+
+  <depend package="pluginlib"/>
+
+  <export>
+    <pr2_controller_interface plugin="${prefix}/sample_controller_plugins.xml" />
+  </export>
+ 
+</package>
+
+

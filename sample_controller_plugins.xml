@@ -1,0 +1,7 @@
+<library path="ros/lib/libtestReaderWrapper">
+
+  <class name="testReaderWrapper"
+	 type="testReader::testReaderWrapper"
+	 base_class_type="pr2_controller_interface::Controller"/>
+
+</library>
